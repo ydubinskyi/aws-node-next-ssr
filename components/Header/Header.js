@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig();
 
 import './Header.scss';
 
@@ -15,7 +18,7 @@ export default () => (
           <a>Random</a>
         </Link>
 
-        <Link href="/dogs">
+        <Link href={`${publicRuntimeConfig.prefix}/dogs`}>
           <a>Dogs</a>
         </Link>
       </div>
