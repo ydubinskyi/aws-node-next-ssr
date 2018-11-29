@@ -1,0 +1,29 @@
+.Header {
+  background-color: #fff;
+
+  &-inner {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:not(:first-of-type) {
+      margin-left: 20px;
+    }
+  }
+
+  &-logo {
+    a {
+      color: #000;
+    }
+  }
+
+  &-links {
+    text-align: right;
+  }
+}

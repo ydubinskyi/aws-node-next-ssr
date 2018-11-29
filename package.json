@@ -1,0 +1,30 @@
+{
+  "name": "aws-node-next-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "offline": "next build && serverless offline start",
+    "deploy": "npm run build && sls deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "next": "^7.0.2",
+    "node-sass": "^4.10.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-http": "^1.8.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.31.3"
+  }
+}
