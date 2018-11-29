@@ -12,7 +12,7 @@ const handle = app.getRequestHandler();
 function createServer() {
   const server = express();
 
-  server.get('/dev/*', (req, res) => handle(req, res))
+  server.get('*', (req, res) => handle(req, res))
 
   return server;
 }
